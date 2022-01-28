@@ -1,0 +1,39 @@
+.room-code {
+  height: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #FFF;
+  border: 1px solid #00838F;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: filter 0.2s;
+
+  div {
+    background: #00838F;
+    display: flex;
+    padding: 15px 10px 15px 15px;
+    align-items: center;
+    flex: 1;
+  }
+
+  span {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    flex: 8;
+    padding: 0 16px 0 12px;
+    width: 240px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &:not(:disabled):hover {
+    filter: brightness(0.9);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
