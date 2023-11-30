@@ -20,7 +20,7 @@ type RoomParams = {
 export function AdminRoom() {
     const navigate = useNavigate()
     const params = useParams<RoomParams>();
-    const roomId=params.id;
+    const roomId = params.id;
 
     const {title, questions} = useRoom(roomId)
 
@@ -54,10 +54,10 @@ export function AdminRoom() {
         <div id="page-room">
             <header>
                 <div className="content">
-                        <img src={logoImg} alt="Logo let-me-ask"/>
+                    <img src={logoImg} alt="Logo let-me-ask"/>
                     <div>
-                    <RoomCode code={roomId}/>
-                    <Button isOutlined onClick={handleEndRoom}>Encerrar Sala</Button>
+                        <RoomCode code={roomId}/>
+                        <Button isOutlined onClick={handleEndRoom}>Encerrar Sala</Button>
                     </div>
                 </div>
             </header>

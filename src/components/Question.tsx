@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import {ReactNode} from 'react';
 import cx from 'classnames';
 
 import '../styles/question.scss';
@@ -25,14 +25,14 @@ export function Question({
         <div
             className={cx(
                 'question',
-                { answered: isAnswered },
-                { highlighted: isHighlighted && !isAnswered },
+                {answered: isAnswered},
+                {highlighted: isHighlighted && !isAnswered},
             )}
         >
             <p>{content}</p>
             <footer>
                 <div className="user-info">
-                    <img src={author.avatar} alt={author.name} />
+                    <img src={author.avatar} alt={author.name}/>
                     <span>{author.name}</span>
                 </div>
                 <div>
