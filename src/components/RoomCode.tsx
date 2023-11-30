@@ -4,6 +4,7 @@ import '../styles/room-code.scss';
 type RoomCodeProps = {
     code: string;
 }
+
 export function RoomCode(props: RoomCodeProps) {
     function copyRoomCodeToClipboard() {
         navigator.clipboard.writeText(props.code)
